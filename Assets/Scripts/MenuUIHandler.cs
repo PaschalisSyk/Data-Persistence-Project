@@ -9,7 +9,7 @@ public class MenuUIHandler : MonoBehaviour
 {
     public string bestScoreName;
     public string bestScore;
-    public TMP_InputField nameField;
+    public TextMeshProUGUI nameField;
     public TextMeshProUGUI scoreText;
 
     private void Start()
@@ -38,9 +38,9 @@ public class MenuUIHandler : MonoBehaviour
 
     public void StartGame()
     {
+        ApplyName();
 
         SceneManager.LoadScene(1);
-        ApplyName();
     }
 
     public void QuitGame()
